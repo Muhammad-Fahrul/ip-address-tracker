@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>IP Address Tracker</h1>
+    </header>
+    <main>
+      <section>
+        <div class="search">
+          <input
+            type="text"
+            id="ip-address"
+            placeholder=" Search for any IP address or domain"
+          />
+          <button id="search-btn">
+            <img src="./images/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+        <div class="info-ip-address">
+          <ul>
+            <li>
+              <h2>Ip address</h2>
+              <p id="ip-address-result">-</p>
+            </li>
+            <li>
+              <h2>Location</h2>
+              <p id="location-result">-</p>
+            </li>
+            <li>
+              <h2>Timezone</h2>
+              <p id="timezone-result">-</p>
+            </li>
+            <li>
+              <h2>ISP</h2>
+              <p id="isp-result">-</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="map-section">
+        <div id="map"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
